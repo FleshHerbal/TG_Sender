@@ -7,7 +7,7 @@ namespace TG_Sender.Data
 {
     class MarketCapAPI
     {
-        private const string ApiKey = "6f9138b6-422d-4ef7-a679-a401fa7225ae";
+        private const string ApiKey = "key";
         private const string URL_Path = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest";
 
         internal Tuple<string, float, DateTime> GetMarketCap()
