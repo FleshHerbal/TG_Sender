@@ -10,10 +10,7 @@ namespace TG_Sender.Data
     {
         internal Tuple<decimal, float> GetQoute(decimal amount)
         {
-            IRestResponse result = SendRequest(amount);
-
-            USDquoteModel model = ToModel(result);
-
+            USDquoteModel model = ToModel(SendRequest(amount));
             return Tuple.Create(Convert.ToDecimal(model.data.sum_result), model.data.rate1);
         }
 
