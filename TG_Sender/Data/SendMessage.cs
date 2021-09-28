@@ -65,7 +65,6 @@ namespace TG_Sender.Data
                 restRequest.AddParameter("chat_id", chat_id).AddParameter("text", message);
 
                 response = await restClient.ExecuteAsync(restRequest);
-
                 return response;
             }
             catch (Exception ex)
